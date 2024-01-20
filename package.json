@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-same-complex128array",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Test if two arguments are both Complex128Arrays and have the same values.",
   "license": "Apache-2.0",
   "author": {
