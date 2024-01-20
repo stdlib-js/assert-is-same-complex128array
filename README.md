@@ -35,14 +35,30 @@ limitations under the License.
 
 > Test if two arguments are both [Complex128Arrays][@stdlib/array/complex128] and have the [same values][@stdlib/assert/is-same-value].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-same-complex128array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isSameComplex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex128array@esm/index.mjs';
+var isSameComplex128Array = require( '@stdlib/assert-is-same-complex128array' );
 ```
 
 #### isSameComplex128Array( v1, v2 )
@@ -50,7 +66,7 @@ import isSameComplex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-
 Tests if two arguments are both [Complex128Arrays][@stdlib/array/complex128] and have the [same values][@stdlib/assert/is-same-value].
 
 ```javascript
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@esm/index.mjs';
+var Complex128Array = require( '@stdlib/array-complex128' );
 
 var x = new Complex128Array( [ 1.0, 2.0 ] );
 var y = new Complex128Array( [ 1.0, 2.0 ] );
@@ -81,14 +97,9 @@ bool = isSameComplex128Array( x, [ 1.0, 2.0 ] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@esm/index.mjs';
-import isSameComplex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex128array@esm/index.mjs';
+```javascript
+var Complex128Array = require( '@stdlib/array-complex128' );
+var isSameComplex128Array = require( '@stdlib/assert-is-same-complex128array' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 var y = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -104,10 +115,6 @@ x = new Complex128Array( [ NaN, NaN, NaN, NaN ] );
 y = new Complex128Array( [ NaN, NaN, NaN, NaN ] );
 out = isSameComplex128Array( x, y );
 // returns true
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -131,7 +138,7 @@ out = isSameComplex128Array( x, y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -161,8 +168,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-same-complex128array.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-same-complex128array
 
-[test-image]: https://github.com/stdlib-js/assert-is-same-complex128array/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/assert-is-same-complex128array/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/assert-is-same-complex128array/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/assert-is-same-complex128array/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-same-complex128array/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-same-complex128array?branch=main
@@ -191,9 +198,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-same-complex128array/main/LICENSE
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128/tree/esm
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
-[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value/tree/esm
+[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
 
 </section>
 
