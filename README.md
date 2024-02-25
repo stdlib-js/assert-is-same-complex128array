@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isSameComplex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex128array@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-same-complex128array/tags). For example,
+
+```javascript
 import isSameComplex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex128array@v0.2.1-esm/index.mjs';
 ```
 
@@ -88,7 +93,7 @@ bool = isSameComplex128Array( x, [ 1.0, 2.0 ] );
 <script type="module">
 
 import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@esm/index.mjs';
-import isSameComplex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex128array@v0.2.1-esm/index.mjs';
+import isSameComplex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex128array@esm/index.mjs';
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 var y = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
